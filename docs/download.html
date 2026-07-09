@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting… - StepLoom</title>
+<meta name="robots" content="noindex">
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:4rem 1rem;">
+<p>Taking you to the right store…</p>
+
+<script>
+  var GOOGLE_PLAY_URL = "https:\/\/play.google.com\/store\/apps\/details?id=com.bryxoft.StepLoom";
+  var APP_STORE_URL   = null;
+
+  var ua = navigator.userAgent || navigator.vendor || window.opera;
+  var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+  var isAndroid = /android/i.test(ua);
+
+  var dest = "/";
+  if (isAndroid && GOOGLE_PLAY_URL) {
+    dest = GOOGLE_PLAY_URL;
+  } else if (isIOS && APP_STORE_URL) {
+    dest = APP_STORE_URL;
+  }
+
+  window.location.replace(dest);
+</script>
+
+<noscript>
+      <p><a href="https://play.google.com/store/apps/details?id=com.bryxoft.StepLoom">Get it on Google Play</a></p>
+  </noscript>
+</body>
+</html>

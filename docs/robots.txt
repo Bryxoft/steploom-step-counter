@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private files
+Disallow: /_components/
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /BrowserDetection.php
+Disallow: /config.php
+Disallow: /tailwind.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Allow important pages
+Allow: /index.php
+Allow: /contact.php
+Allow: /privacy-policy.php
+Allow: /terms-conditions.php
+Allow: /download.php
+
+# Allow assets
+Allow: /assets/
+Allow: /dist/
+
+# Sitemap location
+Sitemap: https://StepLoomapp.dev/sitemap.xml

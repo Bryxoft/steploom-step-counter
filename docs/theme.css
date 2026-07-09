@@ -1,0 +1,46 @@
+/* ============================================================
+   StepLoom — Brand Theme
+   ============================================================
+   This is the ONLY file you edit to re-skin the entire site.
+   Every page/component uses Tailwind's `emerald-*` utility
+   classes (bg-emerald-600, text-emerald-600, from-emerald-50,
+   etc.), and tailwind.config.js has been wired so that the
+   emerald palette itself is generated from the variables
+   below — so changing a number here changes every button,
+   icon, badge, gradient, and link across the whole site.
+
+   Format: space-separated "R G B" (0-255) — NOT "rgb(...)" or
+   a hex string. This keeps Tailwind's opacity modifiers working
+   (e.g. bg-emerald-600/50, text-emerald-600/80).
+
+   After changing values, rebuild the CSS:
+     npm run build
+
+   Tip: pick any Tailwind color scale (tailwindcss.com/docs/colors)
+   and paste its 50–900 RGB values below to re-theme instantly.
+   ============================================================ */
+
+:root {
+    /* Current theme: Emerald / Green */
+    --color-primary-50:  236 253 245;
+    --color-primary-100: 209 250 229;
+    --color-primary-200: 167 243 208;
+    --color-primary-300: 110 231 183;
+    --color-primary-400: 52  211 153;
+    --color-primary-500: 16  185 129;
+    --color-primary-600: 5   150 105;
+    --color-primary-700: 4   120 87;
+    --color-primary-800: 6   95  70;
+    --color-primary-900: 6   78  59;
+
+    /* Convenience hex aliases for the hand-rolled (non-Tailwind)
+       legal-page CSS (privacy-policy.php / terms-conditions.php).
+       Keep these in sync with the shades above if you re-theme. */
+    --brand-hex-50:  #ecfdf5;
+    --brand-hex-100: #d1fae5;
+    --brand-hex-200: #a7f3d0;
+    --brand-hex-500: #10b981;
+    --brand-hex-600: #059669;
+    --brand-hex-700: #047857;
+    --brand-hex-800: #065f46;
+}
